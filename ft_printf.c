@@ -6,7 +6,7 @@
 /*   By: skarayil <skarayil@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 16:42:22 by skarayil          #+#    #+#             */
-/*   Updated: 2025/06/27 17:51:33 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/28 12:59:32 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,23 +29,23 @@ static int	ft_uk_format(char uk)
 	return (ret);
 }
 
-static int	ft_print_format(const char *input, va_list args, int *i)
+static int	ft_print_format(const char *input, va_list *args, int *i)
 {
 	int	ret;
 
 	ret = 0;
 	if (input[*i + 1] == 'c')
-		ret = ft_putchar(va_arg(args, int));
+		ret = ft_putchar(va_arg(*args, int));
 	else if (input[*i + 1] == 's')
-		ret = ft_putstr(va_arg(args, char *));
+		ret = ft_putstr(va_arg(*args, char *));
 	else if (input[*i + 1] == 'p')
-		ret = ft_putptr(va_arg(args, void *));
+		ret = ft_putptr(va_arg(*args, void *));
 	else if (input[*i + 1] == 'd' || input[*i + 1] == 'i')
-		ret = ft_putnbr(va_arg(args, int));
+		ret = ft_putnbr(va_arg(*args, int));
 	else if (input[*i + 1] == 'u')
-		ret = ft_putunbr(va_arg(args, unsigned int));
+		ret = ft_putunbr(va_arg(*args, unsigned int));
 	else if (input[*i + 1] == 'x' || input[*i + 1] == 'X')
-		ret = ft_puthex(va_arg(args, unsigned int), input[*i + 1]);
+		ret = ft_puthex(va_arg(*args, unsigned int), input[*i + 1]);
 	else if (input[*i + 1] == '%')
 		ret = ft_putchar('%');
 	else
@@ -55,7 +55,7 @@ static int	ft_print_format(const char *input, va_list args, int *i)
 	return (ret);
 }
 
-static int	ft_format(const char *input, va_list args, int *i)
+static int	ft_format(const char *input, va_list *args, int *i)
 {
 	int	ret;
 
@@ -65,6 +65,7 @@ static int	ft_format(const char *input, va_list args, int *i)
 		if (ret == -1)
 			return (-1);
 		(*i)++;
+		return (ret);
 	}
 	else
 	{
@@ -89,7 +90,7 @@ int	ft_printf(const char *input, ...)
 	va_start(args, input);
 	while (input[i] != '\0')
 	{
-		ret = ft_format(input, args, &i);
+		ret = ft_format(input, &args, &i);
 		if (ret == -1)
 		{
 			va_end(args);

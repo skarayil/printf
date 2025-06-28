@@ -6,7 +6,7 @@
 /*   By: skarayil <skarayil@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 16:43:24 by skarayil          #+#    #+#             */
-/*   Updated: 2025/06/27 23:19:20 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/28 12:59:37 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ int	ft_putchar(char c)
 {
 	int	ret;
 
-	if (c == '\0')
-		return (write(1, "", 0));
 	ret = write(1, &c, 1);
 	if (ret == -1)
 		return (-1);
