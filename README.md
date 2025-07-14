@@ -1,4 +1,4 @@
-#  # ft_printf: C Dilinde Biçimlendirilmiş Çıktı Fonksiyonu
+# ft_printf: C Dilinde Biçimlendirilmiş Çıktı Fonksiyonu
 
 # Tanım  
 **Bu projenin amacı, C dilinde sıklıkla kullanılan ⁠ printf ⁠ fonksiyonunun temel işlevlerini sıfırdan yazmak ve:**
@@ -27,15 +27,16 @@
 *    **⁠Düşük Seviyeli Çıktı Yönetimi:**
   C dilinde düşük seviyede nasıl çıktı üretildiği ve ⁠ write ⁠ sistem çağrısı ile bu çıktının nasıl kontrol edildiği uygulamalı olarak öğrenilir.
 
-*   **Desteklenen Formatlar:**
-    *   `%c`: Karakter yazdırır.
-    *   `%s`: String yazdırır.
-    *   `%p`: İşaretçi adresini yazdırır.
-    *   `%d` ve `%i`: Ondalık (decimal) tam sayı yazdırır.
-    *   `%u`: İşaretsiz ondalık tam sayı yazdırır.
-    *   `%x`: İşaretsiz onaltılık (hexadecimal) tam sayıyı küçük harflerle yazdırır.
-    *   `%X`: İşaretsiz onaltılık tam sayıyı büyük harflerle yazdırır.
-    *   `%%`: Yüzde işareti (%) yazdırır.
+# Desteklenen Formatlar:
+
+*    **   `%c`: Karakter yazdırır.**
+*    **   `%s`: String yazdırır.**
+*    **   `%p`: İşaretçi adresini yazdırır.**
+*    **   `%d` ve `%i`: Ondalık (decimal) tam sayı yazdırır.**
+*    **   `%u`: İşaretsiz ondalık tam sayı yazdırır.**
+*    **   `%x`: İşaretsiz onaltılık (hexadecimal) tam sayıyı küçük harflerle yazdırır.**
+*    **   `%X`: İşaretsiz onaltılık tam sayıyı büyük harflerle yazdırır.**
+*    **   `%%`: Yüzde işareti (%) yazdırır.**
 
 ---
 ### Created by Sude Naz Karayıldırım
