@@ -1,4 +1,4 @@
-# ft_printf: C Dilinde Biçimlendirilmiş Çıktı Fonksiyonu
+# ft_printf - C Dilinde Biçimlendirilmiş Çıktı Fonksiyonu
 
 **Bu projenin amacı, C dilinde sıklıkla kullanılan ⁠ printf ⁠ fonksiyonunun temel işlevlerini sıfırdan yazmak ve:**
 
