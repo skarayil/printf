@@ -1,6 +1,5 @@
 # ft_printf: C Dilinde Biçimlendirilmiş Çıktı Fonksiyonu
 
-# Tanım  
 **Bu projenin amacı, C dilinde sıklıkla kullanılan ⁠ printf ⁠ fonksiyonunun temel işlevlerini sıfırdan yazmak ve:**
 
 *    **⁠⁠Variadic Function Kullanımı:**
@@ -29,14 +28,14 @@
 
 # Desteklenen Formatlar:
 
-*    **   `%c`: Karakter yazdırır.**
-*    **   `%s`: String yazdırır.**
-*    **   `%p`: İşaretçi adresini yazdırır.**
-*    **   `%d` ve `%i`: Ondalık (decimal) tam sayı yazdırır.**
-*    **   `%u`: İşaretsiz ondalık tam sayı yazdırır.**
-*    **   `%x`: İşaretsiz onaltılık (hexadecimal) tam sayıyı küçük harflerle yazdırır.**
-*    **   `%X`: İşaretsiz onaltılık tam sayıyı büyük harflerle yazdırır.**
-*    **   `%%`: Yüzde işareti (%) yazdırır.**
+*    **`%c`: Karakter yazdırır.**
+*    **`%s`: String yazdırır.**
+*    **`%p`: İşaretçi adresini yazdırır.**
+*    **`%d` ve `%i`: Ondalık (decimal) tam sayı yazdırır.**
+*    **`%u`: İşaretsiz ondalık tam sayı yazdırır.**
+*    **`%x`: İşaretsiz onaltılık (hexadecimal) tam sayıyı küçük harflerle yazdırır.**
+*    **`%X`: İşaretsiz onaltılık tam sayıyı büyük harflerle yazdırır.**
+*    **`%%`: Yüzde işareti (%) yazdırır.**
 
 ---
 ### Created by Sude Naz Karayıldırım
