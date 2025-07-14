@@ -1,13 +1,13 @@
-## ft_printf: C Dilinde Biçimlendirilmiş Çıktı Fonksiyonu
+#  # ft_printf: C Dilinde Biçimlendirilmiş Çıktı Fonksiyonu
 
 # Tanım  
 **Bu projenin amacı, C dilinde sıklıkla kullanılan ⁠ printf ⁠ fonksiyonunun temel işlevlerini sıfırdan yazmak ve:**
 
 **•⁠  ⁠Variadic Function Kullanımı:**
-  ⁠ va_list ⁠, ⁠ va_start ⁠, ⁠ va_arg ⁠, ⁠ va_end ⁠ makrolarıyla değişken sayıda argüman alan fonksiyon yazma becerisi kazanılır.
+    va_list ⁠, ⁠ va_start ⁠, ⁠ va_arg ⁠, ⁠ va_end ⁠ makrolarıyla değişken sayıda argüman alan fonksiyon yazma becerisi kazanılır.
 
-**•⁠  ⁠Format Ayrıştırma ve Analiz:** 
-  Format string karakter karakter işlenerek, doğru türde veri yazdırma mantığı geliştirilir.
+**•⁠  ⁠Format Ayrıştırma ve Analiz:**
+    Format string karakter karakter işlenerek, doğru türde veri yazdırma mantığı geliştirilir.
 
 **•⁠  ⁠Hexadecimal ve Pointer İşlemleri:**
   Sayıların onluk sistemden onaltılıya (base 10 → base 16) dönüştürülmesi ve pointer adreslerinin yazdırılması öğrenilir.
