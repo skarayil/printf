@@ -69,7 +69,7 @@ Projeyi derlemek için C derleyicisi (cc) gereklidir.
 
 ## Kullanım
 
-ft_printf fonksiyonu, kullanıcı tarafından belirtilen format string'ine göre verileri yazdırır.
+Kitaplık `make` komutu ile derlendikten sonra oluşan `libftprintf.a` dosyasını projenize bağlayarak, `ft_printf.h` başlık dosyasını çağırdıktan sonra `ft_printf` fonksiyonunu kullanabilirsiniz. ft_printf fonksiyonu, kullanıcı tarafından belirtilen format string'ine göre verileri yazdırır.
 
 ```c
 #include "ft_printf.h"
