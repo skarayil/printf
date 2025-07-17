@@ -28,7 +28,7 @@
 *    **⁠Düşük Seviyeli Çıktı Yönetimi:**
   C dilinde düşük seviyede nasıl çıktı üretildiği ve ⁠ write ⁠ sistem çağrısı ile bu çıktının nasıl kontrol edildiği uygulamalı olarak öğrenilir.
 
-## Desteklenen Formatlar
+## Desteklenen Özellikler
 
 *    **`%c`: Karakter yazdırır.**
 *    **`%s`: String yazdırır.**
