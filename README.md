@@ -47,7 +47,7 @@ ft_printf
 ├── ft_printf.h                 # Fonksiyon prototipleri ve gerekli kütüphaneleri içerir.
 ├── ft_printf_utils.c           # Yardımcı fonksiyonları içerir (format işleme, bellek kopyalama vb.).
 ├── ft_printf_base.             # Temel çıktı formatları için kullanılan yardımcı fonksiyonlar.
-├── README.md                   # Proje hakkında bilgi ve kullanım talimatları içerir.  bu metni daha okunur kısa net hale getir
+├── README.md                   # Proje hakkında bilgi ve kullanım talimatları içerir.
 
 
 ```
