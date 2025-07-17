@@ -26,7 +26,7 @@
 *    **⁠Düşük Seviyeli Çıktı Yönetimi:**
   C dilinde düşük seviyede nasıl çıktı üretildiği ve ⁠ write ⁠ sistem çağrısı ile bu çıktının nasıl kontrol edildiği uygulamalı olarak öğrenilir.
 
-# Desteklenen Formatlar:
+### Desteklenen Formatlar:
 
 *    **`%c`: Karakter yazdırır.**
 *    **`%s`: String yazdırır.**
@@ -43,10 +43,11 @@
 ```
 ft_printf
 │
+├── Makefile                    # Projeyi derlemek için kullanılan makefile komutlarını içerir.
 ├── ft_printf.c                 # `ft_printf()` fonksiyonunun ana işlevini içerir.
 ├── ft_printf.h                 # Fonksiyon prototipleri ve gerekli kütüphaneleri içerir.
-├── ft_printf_utils.c           # Yardımcı fonksiyonları içerir (format işleme, bellek kopyalama vb.).
-├── ft_printf_base.             # Temel çıktı formatları için kullanılan yardımcı fonksiyonlar.
+├── ft_printf_utils.c           # Yardımcı fonksiyonları içerir (çeşitli çıktı işlemleri için).
+├── ft_printf_base.             # Taban dönüşümleri için kullanılan yardımcı fonksiyonları içerir.
 ├── README.md                   # Proje hakkında bilgi ve kullanım talimatları içerir.
 
 
