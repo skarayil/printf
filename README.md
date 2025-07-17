@@ -1,6 +1,8 @@
 # ft_printf - C Dilinde Biçimlendirilmiş Çıktı Fonksiyonu
 
-**Bu projenin amacı, C dilinde sıklıkla kullanılan ⁠ printf ⁠ fonksiyonunun temel işlevlerini sıfırdan yazmak ve:**
+**C dilinde biçimlendirilmiş çıktı üretmek için bir fonksiyon yazmaktır. Bu proje, verilerin belirli bir formatın ekrana yazdırılmasını sağlarken, sistem çağrıları ile çıktı üretimi ve bellek yönetimi üzerine pratik yapma fırsatı sunar.**
+
+## Projenin Amacı
 
 *    **⁠⁠Variadic Function Kullanımı:**
     va_list ⁠, ⁠ va_start ⁠, ⁠ va_arg ⁠, ⁠ va_end ⁠ makrolarıyla değişken sayıda argüman alan fonksiyon yazma becerisi kazanılır.
@@ -26,7 +28,7 @@
 *    **⁠Düşük Seviyeli Çıktı Yönetimi:**
   C dilinde düşük seviyede nasıl çıktı üretildiği ve ⁠ write ⁠ sistem çağrısı ile bu çıktının nasıl kontrol edildiği uygulamalı olarak öğrenilir.
 
-### Desteklenen Formatlar:
+## Desteklenen Formatlar
 
 *    **`%c`: Karakter yazdırır.**
 *    **`%s`: String yazdırır.**
@@ -38,7 +40,7 @@
 *    **`%%`: Yüzde işareti (%) yazdırır.**
 
 
-### Dosya Yapısı
+## Dosya Yapısı
 
 ```
 ft_printf
@@ -53,7 +55,7 @@ ft_printf
 
 ```
 
-### Kurulum:
+## Kurulum
 
 Projeyi yerel sisteminize klonlamak için aşağıdaki komutu kullanabilirsiniz:
 
@@ -61,11 +63,11 @@ Projeyi yerel sisteminize klonlamak için aşağıdaki komutu kullanabilirsiniz:
 git clone https://github.com/skarayil/ft_printf.git
 ```
 
-### Gerekli Bağımlılıklar:
+## Gerekli Bağımlılıklar
 
 Projeyi derlemek için C derleyicisi (cc) gereklidir.
 
-### Kullanım;
+## Kullanım
 
 ft_printf fonksiyonu, kullanıcı tarafından belirtilen format string'ine göre verileri yazdırır.
 
@@ -80,7 +82,7 @@ int main()
 }
 ```
 
-### Test Senaryoları:
+## Test Senaryoları
 
 *    **Doğrudan Yazdırma:**
   Belirtilen formatlar ile çıktı yazdırılır ve kontrol edilir.
@@ -88,7 +90,7 @@ int main()
 *    **Hata Durumları:**
   Hatalı formatlar ile çıktı alınmaya çalışılır ve hataların doğru şekilde yönetildiği kontrol edilir.
 
-### Notlar:
+## Notlar
 * Çıktı yönetimi: Fonksiyon, verilen formatla uyumlu çıktılar üretir. Bellek sızıntılarının önlenmesi için her okunan satır sonunda belleğin doğru şekilde serbest bırakılması gerekir.
 
 * Bellek yönetimi: ft_printf fonksiyonu, verilerin doğru şekilde yazdırılması ve bellek yönetimini düzgün bir şekilde yapar.
