@@ -60,7 +60,7 @@ ft_printf
 Projeyi yerel sisteminize klonlamak için aşağıdaki komutu kullanabilirsiniz:
 
 ```bash
-git clone https://github.com/skarayil/ft_printf.git
+git clone https://github.com/skarayil/printf.git
 ```
 
 ## Gerekli Bağımlılıklar
