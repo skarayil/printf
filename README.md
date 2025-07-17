@@ -37,5 +37,61 @@
 *    **`%X`: İşaretsiz onaltılık tam sayıyı büyük harflerle yazdırır.**
 *    **`%%`: Yüzde işareti (%) yazdırır.**
 
+
+### Dosya Yapısı
+
+```
+ft_printf
+│
+├── ft_printf.c                 # `ft_printf()` fonksiyonunun ana işlevini içerir.
+├── ft_printf.h                 # Fonksiyon prototipleri ve gerekli kütüphaneleri içerir.
+├── ft_printf_utils.c           # Yardımcı fonksiyonları içerir (format işleme, bellek kopyalama vb.).
+├── ft_printf_base.             # Temel çıktı formatları için kullanılan yardımcı fonksiyonlar.
+├── README.md                   # Proje hakkında bilgi ve kullanım talimatları içerir.  bu metni daha okunur kısa net hale getir
+
+
+```
+
+### Kurulum:
+
+Projeyi yerel sisteminize klonlamak için aşağıdaki komutu kullanabilirsiniz:
+
+```bash
+git clone https://github.com/skarayil/ft_printf.git
+```
+
+### Gerekli Bağımlılıklar:
+
+Projeyi derlemek için C derleyicisi (cc) gereklidir.
+
+### Kullanım;
+
+ft_printf fonksiyonu, kullanıcı tarafından belirtilen format string'ine göre verileri yazdırır.
+
+```c
+#include "ft_printf.h"
+
+int main()
+{
+    ft_printf("Merhaba, %s!\n", "Dünya");
+    ft_printf("Sayınız: %d\n", 42);
+    return 0;
+}
+```
+
+### Test Senaryoları:
+
+*    **Doğrudan Yazdırma:**
+  Belirtilen formatlar ile çıktı yazdırılır ve kontrol edilir.
+
+*    **Hata Durumları:**
+  Hatalı formatlar ile çıktı alınmaya çalışılır ve hataların doğru şekilde yönetildiği kontrol edilir.
+
+### Notlar:
+* Çıktı yönetimi: Fonksiyon, verilen formatla uyumlu çıktılar üretir. Bellek sızıntılarının önlenmesi için her okunan satır sonunda belleğin doğru şekilde serbest bırakılması gerekir.
+
+* Bellek yönetimi: ft_printf fonksiyonu, verilerin doğru şekilde yazdırılması ve bellek yönetimini düzgün bir şekilde yapar.
+
 ---
+
 ### Created by Sude Naz Karayıldırım
