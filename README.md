@@ -342,85 +342,6 @@ ft_printf("printf time: %f seconds\n", std_time);
 
 ---
 
-## 🛠️ Teknik Detaylar
-
-### 🏗️ **Architecture Overview**
-
-```
-ft_printf()
-│
-├── Format String Parsing
-│   ├── Character identification
-│   ├── Format specifier detection
-│   └── Argument type determination
-│
-├── Type-specific Handlers
-│   ├── ft_putchar() - Character output
-│   ├── ft_putstr() - String output
-│   ├── ft_putnbr() - Number output
-│   ├── ft_puthex() - Hexadecimal output
-│   └── ft_putptr() - Pointer output
-│
-└── Output Management
-    ├── Buffer management
-    ├── Character counting
-    └── Error handling
-```
-
-### 🔧 **Key Functions**
-
-| Function | Purpose | Return Value |
-|----------|---------|--------------|
-| `ft_printf()` | Main function, format parsing | Characters printed |
-| `ft_putchar()` | Print single character | Characters printed |
-| `ft_putstr()` | Print string | Characters printed |
-| `ft_putnbr()` | Print decimal number | Characters printed |
-| `ft_puthex()` | Print hexadecimal | Characters printed |
-| `ft_putptr()` | Print pointer address | Characters printed |
-
-### 💡 **Algorithm Insights**
-
-#### 🔍 **Format Parsing Algorithm**
-
-```c
-// Pseudo-code for format parsing
-while (*format) {
-    if (*format == '%') {
-        format++;
-        switch (*format) {
-            case 'c': handle_char(); break;
-            case 's': handle_string(); break;
-            case 'd': case 'i': handle_decimal(); break;
-            // ... other cases
-        }
-    } else {
-        write_char(*format);
-    }
-    format++;
-}
-```
-
-#### 🔢 **Number Conversion Algorithm**
-
-```c
-// Base conversion algorithm
-char *convert_base(unsigned long num, int base, int uppercase) {
-    char *digits = uppercase ? "0123456789ABCDEF" : "0123456789abcdef";
-    char buffer[65]; // 64-bit number max length
-    int i = 64;
-    
-    buffer[i] = '\0';
-    do {
-        buffer[--i] = digits[num % base];
-        num /= base;
-    } while (num > 0);
-    
-    return (&buffer[i]);
-}
-```
-
----
-
 ## 📚 Notlar
 
 ### ⚠️ **Önemli Dikkat Edilmesi Gerekenler**
@@ -451,28 +372,6 @@ char *convert_base(unsigned long num, int base, int uppercase) {
 
 ---
 
-## 🏆 Proje Başarıları
-
-<div align="center">
-
-![Score](https://img.shields.io/badge/Score-125%2F100-gold?style=for-the-badge)
-![Tests](https://img.shields.io/badge/Tests-All%20Passed-success?style=for-the-badge)
-![Norminette](https://img.shields.io/badge/Norminette-OK-brightgreen?style=for-the-badge)
-
-### 📊 **Proje İstatistikleri**
-
-| Metrik | Değer |
-|--------|-------|
-| **Dosya Sayısı** | 6 |
-| **Toplam Satır** | ~500 |
-| **Function Count** | 15+ |
-| **Test Cases** | 100+ |
-| **Coverage** | %100 |
-
-</div>
-
----
-
 <div align="center">
 
 ### 🎯 **Core Skills Gained**
@@ -493,7 +392,7 @@ char *convert_base(unsigned long num, int base, int uppercase) {
 
 ### 👨‍💻 Created by Sude Naz Karayıldırım
 
-[![42 Profile](https://img.shields.io/badge/42%20Profile-sukaraya-black?style=flat-square&logo=42&logoColor=white)](https://profile.intra.42.fr/users/sukaraya)
+[![42 Profile](https://img.shields.io/badge/42%20Profile-sukaraya-black?style=flat-square&logo=42&logoColor=white)](https://profile.intra.42.fr/users/skarayil)
 [![GitHub](https://img.shields.io/badge/GitHub-skarayil-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/skarayil)
 
 **⭐ Eğer bu proje işinize yaradıysa, repo'ya star vermeyi unutmayın!**
